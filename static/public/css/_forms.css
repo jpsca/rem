@@ -1,0 +1,137 @@
+.form-input,
+.form-textarea,
+.form-multiselect {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: white;
+  border: 1px solid #9ca3af;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.form-input::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder {
+  color: #6b7280;
+  opacity: 1;
+  text-transform: none;
+}
+
+.form-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+  color: #6b7280;
+  opacity: 1;
+  text-transform: none;
+}
+
+.form-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
+  color: #6b7280;
+  opacity: 1;
+  text-transform: none;
+}
+
+.form-input::-ms-input-placeholder, .form-textarea::-ms-input-placeholder {
+  color: #6b7280;
+  opacity: 1;
+  text-transform: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #6b7280;
+  opacity: 1;
+  text-transform: none;
+}
+
+.form-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #9ca3af;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="theme('colors.gray.500'"><path d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>');
+}
+
+.form-select::-ms-expand {
+  border: none /* The select padding is causing some whitespace around the chevron which looks weird with a border */
+}
+
+@media not print {
+  .form-select::-ms-expand {
+    display: none;
+  }
+}
+
+.form-checkbox,
+.form-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-origin: border-box;
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+  background: white;
+  border: 1px solid;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  color: #3b82f6;
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 1em;
+  width: 1em;
+  text-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-checkbox {
+  border-radius: 0.25rem;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" fill="%23fff" xmlns="http://www.w3.org/2000/svg"><path d="M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z"/></svg>');
+}
+
+.form-radio {
+  border-radius: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" fill="%23ffffff" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="3"/></svg>');
+}
+
+.form-checkbox:checked,
+.form-radio:checked {
+  border:  1px solid transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: currentColor;
+  background-size: 100% 100%;
+}
+
+@media not print {
+  .form-checkbox::-ms-check,
+	.form-radio::-ms-check {
+    color: transparent; /* Hide the check */
+    background: inherit;
+    border-color: inherit;
+    border-radius: inherit;
+  }
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-multiselect:focus,
+.form-select:focus,
+.form-checkbox:focus,
+.form-radio:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #3b82f6;
+}
